@@ -47,6 +47,9 @@ namespace TestingApp.API.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)
         {
+
+            //throw new Exception("Test Exception");
+
             var userFromRepo = await _repo.Login(userForLoginDto.Username.ToLower(), userForLoginDto.Password);
 
             if (userFromRepo == null)
@@ -65,28 +68,30 @@ namespace TestingApp.API.Controllers
             var key = new SymmetricSecurityKey(System.Text.Encoding.
                 UTF8.GetBytes(secret));
 
-            var creds = new SigningCredentials(key,SecurityAlgorithms.HmacSha512Signature);
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
 
-            var tokenDescriptor = new SecurityTokenDescriptor() {
+            var tokenDescriptor = new SecurityTokenDescriptor()
+            {
 
-                    Subject = new ClaimsIdentity(claims),
-                    Expires = DateTime.Now.AddDays(1),
-                    SigningCredentials = creds
+                Subject = new ClaimsIdentity(claims),
+                Expires = DateTime.Now.AddDays(1),
+                SigningCredentials = creds
             };
 
             var tokenHandler = new JwtSecurityTokenHandler();
-            
+
             //try{
-            var token=tokenHandler.CreateToken(tokenDescriptor);
-           // }
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            // }
             //catch(Exception ex)
             //{
-              //  var ext= ex.Message;
+            //  var ext= ex.Message;
             //}
 
             //return Ok();
-           
-            return Ok(new {
+
+            return Ok(new
+            {
                 token = tokenHandler.WriteToken(token)
             });
 
