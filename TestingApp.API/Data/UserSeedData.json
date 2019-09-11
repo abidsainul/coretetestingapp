@@ -1,0 +1,163 @@
+[
+    {
+      "Username": "Teresa",
+      "Gender": "female",
+      "DateOfBirth": "1957-02-21",
+      "Password": "password",
+      "KnownAs": "Teresa",
+      "Created": "2017-02-14",
+      "LastActive": "2017-02-14",
+      "PlantPhotos": [
+        {
+          "url": "https://randomuser.me/api/portraits/women/51.jpg",
+          "isMain": true,
+          "description": "In fugiat consequat ad elit occaecat elit magna exercitation ad mollit aliqua."
+        }
+      ]
+    },
+    {
+      "Username": "Pamela",
+      "Gender": "female",
+      "DateOfBirth": "1975-02-04",
+      "Password": "password",
+      "KnownAs": "Pamela",
+      "Created": "2017-01-25",
+      "LastActive": "2017-01-25",
+      "PlantPhotos": [
+        {
+          "url": "https://randomuser.me/api/portraits/women/73.jpg",
+          "isMain": true,
+          "description": "Deserunt aliqua laboris excepteur enim reprehenderit culpa id in in culpa."
+        }
+      ]
+    },
+    {
+      "Username": "Jennifer",
+      "Gender": "female",
+      "DateOfBirth": "1951-05-01",
+      "Password": "password",
+      "KnownAs": "Jennifer",
+      "Created": "2017-08-07",
+      "LastActive": "2017-08-07",
+      "PlantPhotos": [
+        {
+          "url": "https://randomuser.me/api/portraits/women/52.jpg",
+          "isMain": true,
+          "description": "Esse reprehenderit enim cillum deserunt commodo."
+        }
+      ]
+    },
+    {
+      "Username": "Elinor",
+      "Gender": "female",
+      "DateOfBirth": "1950-03-23",
+      "Password": "password",
+      "KnownAs": "Elinor",
+      "Created": "2017-03-27",
+      "LastActive": "2017-03-27",
+      "PlantPhotos": [
+        {
+          "url": "https://randomuser.me/api/portraits/women/9.jpg",
+          "isMain": true,
+          "description": "Fugiat aute adipisicing fugiat consectetur esse incididunt ea sunt exercitation enim incididunt laboris deserunt ex."
+        }
+      ]
+    },
+    {
+      "Username": "Christina",
+      "Gender": "female",
+      "DateOfBirth": "1995-05-25",
+      "Password": "password",
+      "KnownAs": "Christina",
+      "Created": "2017-05-29",
+      "LastActive": "2017-05-29",
+      "PlantPhotos": [
+        {
+          "url": "https://randomuser.me/api/portraits/women/5.jpg",
+          "isMain": true,
+          "description": "Esse in qui ut duis culpa Lorem."
+        }
+      ]
+    },
+    {
+          "Username": "James",
+          "Gender": "male",
+          "DateOfBirth": "1963-10-24",
+          "Password": "password",
+          "KnownAs": "James",
+          "Created": "2017-02-12",
+          "LastActive": "2017-02-12",
+          "PlantPhotos": [
+            {
+              "url": "https://randomuser.me/api/portraits/men/60.jpg",
+              "isMain": true,
+              "description": "Dolore aute proident eu veniam quis eu quis occaecat irure incididunt sunt quis culpa officia."
+            }
+          ]
+        },
+        {
+          "Username": "Cleveland",
+          "Gender": "male",
+          "DateOfBirth": "1989-11-09",
+          "Password": "password",
+          "KnownAs": "Cleveland",
+          "Created": "2017-05-14",
+          "LastActive": "2017-05-14",
+          "PlantPhotos": [
+            {
+              "url": "https://randomuser.me/api/portraits/men/21.jpg",
+              "isMain": true,
+              "description": "Qui laboris elit laborum sint amet voluptate tempor est enim aliquip ipsum non."
+            }
+          ]
+        },
+        {
+          "Username": "Barnett",
+          "Gender": "male",
+          "DateOfBirth": "1966-10-10",
+          "Password": "password",
+          "KnownAs": "Barnett",
+          "Created": "2017-01-06",
+          "LastActive": "2017-01-06",
+          "PlantPhotos": [
+            {
+              "url": "https://randomuser.me/api/portraits/men/50.jpg",
+              "isMain": true,
+              "description": "Irure eu aute nulla esse irure nostrud."
+            }
+          ]
+        },
+        {
+          "Username": "Mcfarland",
+          "Gender": "male",
+          "DateOfBirth": "1958-04-17",
+          "Password": "password",
+          "KnownAs": "Mcfarland",
+          "Created": "2017-06-04",
+          "LastActive": "2017-06-04",
+          "PlantPhotos": [
+            {
+              "url": "https://randomuser.me/api/portraits/men/69.jpg",
+              "isMain": true,
+              "description": "Enim cupidatat ipsum commodo occaecat officia proident exercitation."
+            }
+          ]
+        },
+        {
+          "Username": "Montoya",
+          "Gender": "male",
+          "DateOfBirth": "1998-02-09",
+          "Password": "password",
+          "KnownAs": "Montoya",
+          "Created": "2017-08-26",
+          "LastActive": "2017-08-26",
+          "PlantPhotos": [
+            {
+              "url": "https://randomuser.me/api/portraits/men/40.jpg",
+              "isMain": true,
+              "description": "Nisi nostrud ipsum tempor duis et sit eiusmod minim Lorem ex."
+            }
+          ]
+        }
+      
+  ]
