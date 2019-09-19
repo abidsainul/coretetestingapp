@@ -1,0 +1,44 @@
+{
+	"orders": [{
+			"transactionCode": "TKTT",
+			"additionalInformation": {
+				"paymentInformationLine1": "AUH - FUK - ICN",
+				"paymentInformationLine2": "CA"
+			},
+			"flightRecords": [{
+					"documentDetails": {
+						"itinerary": [{
+								"originCode": "AUH",
+								"destinationCode": "BOM",
+								"fareBasisTicketDesignator": "GV10KJ"
+							}, {
+								"originCode": "BOM",
+								"destinationCode": "AUH",
+								"fareBasisTicketDesignator": "GV10KJ"
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"basicInformation": {
+		"countryCode": "AE",
+		"channel": "NONGDS",
+		"clientID": "607",
+		"nonTicketInd": true,
+		"agentCode": "8621275"
+	},
+	"formOfPayment": [{
+			"amount": 3000,
+			"currency": "AED2",
+			"type": "CA",
+			"payer": {
+				"email": "johndoe@email.com",
+				"name": "John Doe"
+			}
+		}
+	],
+	"uniqueTransactionID" : "order100"
+	
+}
