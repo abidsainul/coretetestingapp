@@ -24,6 +24,9 @@ import { PlantListResolver } from './_resolvers/plant-list-resolver';
 import { AlertifyService } from './_services/alertify.service';
 import { AuthGuard } from './_guards/auth.guard';
 import { UserService } from './_services/user.service';
+import { PlantEditComponent } from './members/plant-edit/plant-edit.component';
+import { PlantEditResolver } from './_resolvers/plant-edit-resolver';
+import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes-guard';
 
 
 export function tokenGetter() {
@@ -40,7 +43,8 @@ export function tokenGetter() {
       ListsComponent,
       MessagesComponent,
       PlantCardComponent,
-      PlantDetailComponent
+      PlantDetailComponent,
+      PlantEditComponent
    ],
    imports: [
       BrowserModule,
@@ -65,7 +69,9 @@ export function tokenGetter() {
       AuthGuard,
       UserService,
       PlantDetailResolver,
-      PlantListResolver
+      PlantListResolver,
+      PlantEditResolver,
+      PreventUnsavedChanges
    ],
    bootstrap: [
       AppComponent
