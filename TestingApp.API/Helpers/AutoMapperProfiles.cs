@@ -19,8 +19,12 @@ namespace TestingApp.API.Helpers
                     opt.MapFrom(src => src.PlantPhotos.FirstOrDefault(p =>p.IsMain).url))
                 .ForMember(dest => dest.Age, opt =>
                     opt.MapFrom(src => src.DateOfBirth.CalculateAge()));
-            CreateMap<PlantPhoto,PlantPhotoForDetailedDto>();
+            
             CreateMap<UserForUpdateDto , User>();
+            
+            CreateMap<PlantPhoto,PlantPhotoForDetailedDto>();
+            CreateMap<PlantPhoto,PlantPhotoForReturnDto>();
+            CreateMap<PlantPhotoForCreationDto , PlantPhoto> ();
         }
     }
 }

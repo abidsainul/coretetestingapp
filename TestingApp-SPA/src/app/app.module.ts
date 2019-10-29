@@ -6,6 +6,7 @@ import { BsDropdownModule, TabsModule } from 'ngx-bootstrap';
 import { RouterModule } from '@angular/router';
 import { JwtModule } from '@auth0/angular-jwt';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { FileUploadModule } from 'ng2-file-upload';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -19,6 +20,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { appRoutes } from 'src/routes';
 import { PlantCardComponent } from './members/plant-card/plant-card.component';
 import { PlantDetailComponent } from './members/plant-detail/plant-detail.component';
+import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
+
 import { PlantDetailResolver } from './_resolvers/plant-detail-resolver';
 import { PlantListResolver } from './_resolvers/plant-list-resolver';
 import { AlertifyService } from './_services/alertify.service';
@@ -44,7 +47,8 @@ export function tokenGetter() {
       MessagesComponent,
       PlantCardComponent,
       PlantDetailComponent,
-      PlantEditComponent
+      PlantEditComponent,
+      PhotoEditorComponent
    ],
    imports: [
       BrowserModule,
@@ -54,6 +58,7 @@ export function tokenGetter() {
       RouterModule.forRoot(appRoutes),
       TabsModule.forRoot(),
       NgxGalleryModule,
+      FileUploadModule,
       JwtModule.forRoot({
          config: {
             tokenGetter: tokenGetter,

@@ -11,5 +11,8 @@ namespace TestingApp.API.Data
          Task<bool> SaveAll();
          Task<IEnumerable<User>> GetUsers();
          Task<User> GetUser(int id);
+         Task<PlantPhoto> GetPlantPhoto(int id);
+        Task<PlantPhoto> GetMainPlantPhoto(int userId);
+
     }
 }

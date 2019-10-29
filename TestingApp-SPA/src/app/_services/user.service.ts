@@ -31,4 +31,12 @@ updateUser(id: number , user: User) {
   return this.http.put(this.baseUrl + 'users/' + id , user);
 }
 
+setMainPlantPhoto(userId: number , id: number) {
+  return this.http.post(this.baseUrl + 'users/' + userId + '/plantphotos/' + id + '/setMain', {});
+}
+
+deletePlantPhoto(userId: number , id: number) {
+  return this.http.delete(this.baseUrl + 'users/' + userId + '/plantphotos/' + id);
+}
+
 }

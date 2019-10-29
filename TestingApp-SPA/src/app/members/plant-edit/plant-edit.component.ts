@@ -14,9 +14,10 @@ import { UserService } from 'src/app/_services/user.service';
 export class PlantEditComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private alertify: AlertifyService
-    , private userService : UserService, private authService: AuthService) {}
+    , private userService: UserService, private authService: AuthService) {}
 
   user: User;
+  photoUrl: string;
 
   @ViewChild('editForm') editForm: NgForm;
 
@@ -31,7 +32,10 @@ export class PlantEditComponent implements OnInit {
   ngOnInit() {
     this.route.data.subscribe(data => {
       this.user = data['user'];
+      //console.log("user ##");
+      //console.log(this.user.plantPhotos);
     });
+    this.authService.currentPhotoUrl.subscribe(photoUrl => this.photoUrl = photoUrl);
   }
 
   updateUser() {
@@ -42,4 +46,10 @@ export class PlantEditComponent implements OnInit {
       this.alertify.error(error);
     });
   }
+
+  // Update Main Photo When Changes are emitting from photo editor child component
+  updateMainPlantPhoto(photoUrl) {
+    this.user.photoUrl = photoUrl ;
+  }
+
 }
