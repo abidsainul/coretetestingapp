@@ -21,6 +21,7 @@ namespace TestingApp.API.Helpers
                     opt.MapFrom(src => src.DateOfBirth.CalculateAge()));
             
             CreateMap<UserForUpdateDto , User>();
+            CreateMap<UserForRegisterDto, User>();
             
             CreateMap<PlantPhoto,PlantPhotoForDetailedDto>();
             CreateMap<PlantPhoto,PlantPhotoForReturnDto>();
