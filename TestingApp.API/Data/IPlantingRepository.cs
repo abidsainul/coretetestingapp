@@ -13,7 +13,8 @@ namespace TestingApp.API.Data
          Task<PagedList<User>> GetUsers(UserParams userParams);
          Task<User> GetUser(int id);
          Task<PlantPhoto> GetPlantPhoto(int id);
-        Task<PlantPhoto> GetMainPlantPhoto(int userId);
+         Task<PlantPhoto> GetMainPlantPhoto(int userId);
+         Task<Like> GetLike(int userId, int recipientId);
 
     }
 }

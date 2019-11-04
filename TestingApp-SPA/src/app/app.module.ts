@@ -26,6 +26,7 @@ import { PhotoEditorComponent } from './members/photo-editor/photo-editor.compon
 
 import { PlantDetailResolver } from './_resolvers/plant-detail-resolver';
 import { PlantListResolver } from './_resolvers/plant-list-resolver';
+import { ListsResolver } from './_resolvers/lists-resolver';
 import { AlertifyService } from './_services/alertify.service';
 import { AuthGuard } from './_guards/auth.guard';
 import { UserService } from './_services/user.service';
@@ -84,7 +85,8 @@ export function tokenGetter() {
       PlantDetailResolver,
       PlantListResolver,
       PlantEditResolver,
-      PreventUnsavedChanges
+      PreventUnsavedChanges,
+      ListsResolver
    ],
    bootstrap: [
       AppComponent

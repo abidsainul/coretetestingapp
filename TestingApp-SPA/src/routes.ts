@@ -10,6 +10,7 @@ import { PlantDetailResolver } from './app/_resolvers/plant-detail-resolver';
 import { PlantListResolver } from './app/_resolvers/plant-list-resolver';
 import { PlantEditComponent } from './app/members/plant-edit/plant-edit.component';
 import { PlantEditResolver } from './app/_resolvers/plant-edit-resolver';
+import { ListsResolver } from './app/_resolvers/lists-resolver';
 import { PreventUnsavedChanges } from './app/_guards/prevent-unsaved-changes-guard';
 
 export const appRoutes: Routes = [
@@ -27,7 +28,7 @@ export const appRoutes: Routes = [
             {path : 'plant/edit' , component : PlantEditComponent,
                     resolve: { user : PlantEditResolver } ,canDeactivate: [PreventUnsavedChanges] },
             {path : 'messages' , component : MessagesComponent},
-            {path : 'lists' , component : ListsComponent}
+            {path : 'lists' , component : ListsComponent ,resolve : {users: ListsResolver}}
         ]
     },
     {path : '**' , redirectTo : '' , pathMatch : 'full'},
